@@ -170,7 +170,6 @@ const handleEmailChange = (event) => {
             </div>
         </div>
         <ToastContainer
-            className = "toast"
             position='top-right'
             autoClose={1500}
             hideProgressBar={false}

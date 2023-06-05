@@ -414,14 +414,14 @@ const Books = () => {
           />
           <label htmlFor="categorySelect" className={` ${styles.paragraphNew} text-dimYellow block text-[30px] text-center mt-[50px] pb-3 `}>{t('booksSelectLabel')}</label>
           <select id="categorySelect" onChange={handleChange} onClick={fetchData}
-          className={`block appearance-none w-1/2 mx-auto bg-white border border-gray-300 text-gray-700 py-3 px-4 pr-8 rounded-full leading-tight focus:outline-none focus:bg-white focus:border-gray-500 hover:border-gray-500 hover:shadow-md transition duration-300`}>
+          className={`block appearance-none text-center w-1/2 mx-auto bg-white border border-gray-300 text-gray-700 py-3 px-4 pr-8 rounded-full leading-tight focus:outline-none focus:bg-white focus:border-gray-500 hover:border-gray-500 hover:shadow-md transition duration-300`}>
             <option value="all">{t('booksCats')}</option>
             <option value="أدب عربي" className="bg-grey-100">{t('booksCat1')}</option>
             <option value="في النحو والصرف">{t('booksCat2')}</option>
             <option value="علم نفس">{t('booksCat3')}</option>
             <option value="دراسات قرآنيّة">{t('booksCat4')}</option>
           </select>
-          <h1 className={`${styles.paragraphNew} book-heading my-4`}>{value}</h1>
+          <h1 className={`${styles.paragraphNew} book-heading book-heading-all my-4`}>{value}</h1>
           {/* <h1 className="text-2xl font-bold text-gray-900 mb-4">Book Store</h1> */}
           <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
             {category.map((book) => (
@@ -462,7 +462,7 @@ const Books = () => {
         />
         <label htmlFor="categorySelect" className={`select-heading ${styles.paragraph} text-dimYellow block text-[30px] text-center mt-[50px] pb-3 `}>{t('booksSelectLabel')}</label>
         <select id="categorySelect" onChange={handleChange} onClick={fetchData}
-         className={`block appearance-none w-1/2 mx-auto bg-white border border-gray-300 text-gray-700 py-3 px-4 pr-8 rounded-full leading-tight focus:outline-none focus:bg-white focus:border-gray-500 hover:border-gray-500 hover:shadow-md transition duration-300`}>
+         className={`block appearance-none text-center w-1/2 mx-auto bg-white border border-gray-300 text-gray-700 py-3 px-4 pr-8 rounded-full leading-tight focus:outline-none focus:bg-white focus:border-gray-500 hover:border-gray-500 hover:shadow-md transition duration-300`}>
           <option value="all">{t('booksCats')}</option>
           <option value="أدب عربي" className="bg-grey-100">{t('booksCat1')}</option>
           <option value="في النحو والصرف">{t('booksCat2')}</option>
@@ -474,14 +474,14 @@ const Books = () => {
           {bilal}
         <div>
           {showMore && max < categoryOne.length && (
-            <div className="flex items-center justify-center w-[45%] sm:w-[25%] md:w-[15%] mt-[15px] text-[16px] bg-white p-1 mx-auto">
+            <div className="flex items-center justify-center mb-[35px] w-[45%] sm:w-[25%] md:w-[15%] mt-[15px] text-[16px] bg-white p-1 mx-auto">
               <button className='showmore' onClick={handleShowMore} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '0.5rem' }}>
               {t('booksMore')} <MdExpandMore className="text-black" />
               </button>
             </div>
           )}
           {!showMore && (
-            <div className="flex items-center justify-center w-[45%] sm:w-[25%] md:w-[15%] mt-[15px] text-[16px] bg-white p-1 mx-auto">
+            <div className="flex items-center justify-center mb-[35px] w-[45%] sm:w-[25%] md:w-[15%] mt-[15px] text-[16px] bg-white p-1 mx-auto">
               <button className='showmore' onClick={handleShowLess} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '0.5rem' }}>
               {t('booksLess')} <MdExpandLess className="text-black" />
               </button>
@@ -505,14 +505,14 @@ const Books = () => {
         </div>
         <div>
           {showMore && max < categoryTwo.length && (
-            <div className="flex items-center justify-center w-[45%] sm:w-[25%] md:w-[15%] mt-[15px] text-[16px] bg-white p-1 mx-auto">
+            <div className="flex items-center justify-center mb-[35px] w-[45%] sm:w-[25%] md:w-[15%] mt-[15px] text-[16px] bg-white p-1 mx-auto">
               <button className='showmore' onClick={handleShowMore} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '0.5rem' }}>
               {t('booksMore')} <MdExpandMore className="text-black" />
               </button>
             </div>
           )}
           {!showMore && (
-            <div className="flex items-center justify-center w-[45%] sm:w-[25%] md:w-[15%] mt-[15px] text-[16px] bg-white p-1 mx-auto">
+            <div className="flex items-center justify-center mb-[35px] w-[45%] sm:w-[25%] md:w-[15%] mt-[15px] text-[16px] bg-white p-1 mx-auto">
               <button className='showmore' onClick={handleShowLess} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '0.5rem' }}>
               {t('booksLess')} <MdExpandLess className="text-black" />
               </button>
@@ -537,14 +537,14 @@ const Books = () => {
         {/* More and Less Button */}
         <div>
           {showMore && max < categoryThree.length && (
-            <div className="flex items-center justify-center w-[45%] sm:w-[25%] md:w-[15%] mt-[15px] text-[16px] bg-white p-1 mx-auto">
+            <div className="flex items-center justify-center mb-[35px] w-[45%] sm:w-[25%] md:w-[15%] mt-[15px] text-[16px] bg-white p-1 mx-auto">
               <button className='showmore' onClick={handleShowMore} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '0.5rem' }}>
                 {t('booksMore')} <MdExpandMore className="text-black" />
               </button>
             </div>
           )}
           {!showMore && (
-            <div className="flex items-center justify-center w-[45%] sm:w-[25%] md:w-[15%] mt-[15px] text-[16px] bg-white p-1 mx-auto">
+            <div className="flex items-center justify-center mb-[35px] w-[45%] sm:w-[25%] md:w-[15%] mt-[15px] text-[16px] bg-white p-1 mx-auto">
               <button className='showmore' onClick={handleShowLess} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '0.5rem' }}>
               {t('booksLess')} <MdExpandLess className="text-black" />
               </button>
@@ -567,14 +567,14 @@ const Books = () => {
         </div>
         <div>
           {showMore && max < categoryFour.length && (
-            <div className="flex items-center justify-center w-[45%] sm:w-[25%] md:w-[15%] mt-[15px] text-[16px] bg-white p-1 mx-auto">
+            <div className="flex items-center justify-center mb-[35px] w-[45%] sm:w-[25%] md:w-[15%] mt-[15px] text-[16px] bg-white p-1 mx-auto">
               <button className='showmore' onClick={handleShowMore} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '0.5rem' }}>
               {t('booksMore')} <MdExpandMore className="text-black" />
               </button>
             </div>
           )}
           {!showMore && (
-            <div className="flex items-center justify-center w-[45%] sm:w-[25%] md:w-[15%] mt-[15px] text-[16px] bg-white p-1 mx-auto">
+            <div className="flex items-center justify-center mb-[35px] w-[45%] sm:w-[25%] md:w-[15%] mt-[15px] text-[16px] bg-white p-1 mx-auto">
               <button className='showmore' onClick={handleShowLess} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '0.5rem' }}>
               {t('booksLess')} <MdExpandLess className="text-black" />
               </button>

@@ -49,3 +49,8 @@
 .en {
     direction: ltr;
 }
+.book-heading-all {
+    direction: rtl;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-size: 28px;
+}

@@ -46,7 +46,6 @@ const backPage = () => {
       document.getElementById('nav-mobile').style.left = '0px';
       document.getElementById('nav-mobile').style.right = 'initial';
       document.getElementById('language-btn').style.marginRight = '15px';
-      document.getElementsByClassName("toast").style.left = '0px';
       // i18n.changeLanguage(language);
     } else {
       document.body.style.fontFamily = 'Poppins';
@@ -132,7 +131,7 @@ useEffect(() => {
       </div>
 
       <div id='nav-mobile' className={`${toggle ? 'flex' : 'hidden'} p-6 bg-black-gradient
-        absolute  top-20 right-0 mx-4 min-w-[140px] rounded-xl sidebar`}>
+        absolute  top-20 right-0 mx-4 min-w-[140px] z-[999] rounded-xl sidebar`}>
           <ul className='list-none flex flex-col justify-end items-center flex-1'>
               {/* {navLinks.map((nav, index) => (
               <li

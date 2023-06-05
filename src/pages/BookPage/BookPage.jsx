@@ -10,7 +10,9 @@ const BookPage = () => {
             <Books />
         </div>
       </div>
-      <Footer />
+      <Footer 
+        className= "footer-books"
+      />
     </>
   )
 }

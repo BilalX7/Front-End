@@ -34,7 +34,7 @@ const Footer = () => {
           <a href="#contact">Contact</a>
         </li>
       </ul>
-      <p>Created By <span>Bilal Koubar </span>| &copy; 2023 All Right Reserved</p>
+      <p>Created By <span className='text-gradient'>Bilal Koubar </span>| &copy; 2023 All Right Reserved</p>
       <div className='d-grid'>
           <a href='https://wa.me/message/KADANU5Y3FQKF1' rel='noreferrer' target='_blank'>
             <button className='btn whattsapp btn-color'>
